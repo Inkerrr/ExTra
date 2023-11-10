@@ -24,7 +24,7 @@ const IncomeSchema = new mongoose.Schema({
         trim: true
     },
     category:{
-        type: Number,
+        type: String,
         required: true,
         trim: true
     },
@@ -34,6 +34,6 @@ const IncomeSchema = new mongoose.Schema({
         maxLength: 20,
         trim: true
     },
-},{timestams: true})
+},{timestamps: true})
 
 module.exports = mongoose.model('Income', IncomeSchema)
